@@ -1,0 +1,21 @@
+Olteanu Cristiana-Stefania 322CD
+
+    Fisierele buffer si helpers sunt preluate din scheletul de la laboratorul 
+11, iar parson este biblioteca pentru manipularea obiectelor JSON.
+    Request este de asemenea preluat si adaptat din laboatorul 11, aducand
+modificari asupra requesturilor de get si post(stiu ca am un singur 
+cookie de sesiune si un jwt_token) dar si adaugarea unui request de delete.
+    In client se afla logica programului: un while in care citesc de la tastatura
+comenzile si se foloseste pentru verificare strcmp pentru a intra pe comanda
+corespunzatoare. Scriu prompturile pentru comenzi si citesc datele introduse 
+de utilizator pe care le voi pune in json pentru a le trimite catre server.
+Primesc apoi un raspuns de la server pe care il parsez pentru a obtine fie 
+informatia necesara fie eroarea primita. Citesc de la tastatura cu scanf
+dar pentru informatiile pentru carte folosesc fgets deoarece acesta citeste
+pana la enter si nu pana la spatiu ca scanf. 
+    In helpers am adaugat cateva functii pentru anumite bucati de cod care se
+repeta precum printarea mesajelor de eroare daca acestea exista dar si 
+o functie prin care scot cookieul din raspunsul serverului si o 
+functie pentru scoaterea jwt_token. Pentru aceste functii am folosit
+strtok pentru parsare.
+
